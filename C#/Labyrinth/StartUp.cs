@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Labyrinth
 {
-    class Program
+    public class StartUp
     {
         private static string[,] matrix;
         private static Queue<Cell> queue = new Queue<Cell>();
@@ -98,20 +98,6 @@ namespace Labyrinth
                 }
                 Console.WriteLine();
             }
-        }
-    }
-
-    struct Cell
-    {
-        public int Row { get; }
-        public int Col { get; }
-        public int Value { get; }
-
-        public Cell(int row, int col, int value)
-        {
-            Row = row;
-            Col = col;
-            Value = value;
         }
     }
 }
